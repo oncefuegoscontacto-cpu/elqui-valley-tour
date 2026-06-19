@@ -180,110 +180,24 @@ export default function Home() {
   const [submitted, setSubmitted] = useState(false);
 
   const sections: TourSection[] = [
-    {
-      id: 'home',
-      image: '/images/hero.png',
-      alt: 'Elqui Valley Tour - Home',
-      buttonAreas: [
         {
-          x: 30,
-          y: 65,
-          width: 15,
-          height: 6,
-          label: 'Reservar por WhatsApp',
-          action: 'whatsapp'
-        },
-        {
-          x: 50,
-          y: 65,
-          width: 15,
-          height: 6,
-          label: 'Ver Experiencias',
-          action: 'scroll',
-          target: 'astronomico'
-        }
-      ]
-    },
-    {
-      id: 'astronomico',
-      image: '/images/tour_astronomico.png',
-      alt: 'Tour Astronómico',
-      tourId: 'astronomico',
-      tourName: 'Tour Astronómico',
-      buttonAreas: [
-        {
-          x: 25,
-          y: 80,
-          width: 15,
-          height: 6,
-          label: 'Tour Astronómico',
-          action: 'reserve',
-          tour: 'astronomico'
-        }
-      ]
-    },
-    {
-      id: 'pisco',
-      image: '/images/ruta_pisco.png',
-      alt: 'Ruta del Pisco',
-      tourId: 'pisco',
-      tourName: 'Ruta del Pisco',
-      buttonAreas: [
-        {
-          x: 25,
-          y: 80,
-          width: 15,
-          height: 6,
-          label: 'Ruta del Pisco',
-          action: 'reserve',
-          tour: 'pisco'
-        }
-      ]
-    },
-    {
-      id: 'valle',
-      image: '/images/valle_elqui.png',
-      alt: 'Valle del Elqui',
-      tourId: 'valle-del-elqui',
-      tourName: 'Valle del Elqui',
-      buttonAreas: [
-        {
-          x: 25,
-          y: 80,
-          width: 15,
-          height: 6,
-          label: 'Valle del Elqui',
-          action: 'reserve',
-          tour: 'valle-del-elqui'
-        }
-      ]
-    },
-    {
-      id: 'isla-damas',
-      image: '/images/fauna_humboldt_isla.png',
-      alt: 'Fauna del Humboldt - Vida Salvaje en su Hábitat Natural',
-      tourId: 'isla-damas',
-      tourName: 'Fauna del Humboldt'
-    },
-    {
-      id: 'fauna',
-      image: '/images/fauna_humboldt.png',
-      alt: 'Fauna del Humboldt'
-    },
-    {
       id: 'cultura',
       image: '/images/cultura.png',
       alt: 'Tierra de Poesía y Cultura'
     },
-   
-    
+
+    {
+      id: 'ballenas',
+      image: '/images/tour y ballena.png',
+      alt: 'Avistamiento de Ballenas'
+    },
+
     {
       id: 'galeria',
-      image: '/images/miles_viajeros.png',
+      image: '/images/página final.png',
       alt: 'Miles de Viajeros, Un Solo Destino Inolvidable'
     }
   ];
-
   const t = (key: string): string => {
     return translations[key]?.[language] || key;
   };
