@@ -275,16 +275,8 @@ export default function Home() {
       image: '/images/cultura.png',
       alt: 'Tierra de Poesía y Cultura'
     },
-    {
-      id: 'turismo-local',
-      image: '/images/experiencias_gallery.png',
-      alt: 'Experiencias Reales - Turismo Local'
-    },
-    {
-      id: 'reservas',
-      image: '/images/ballenas_reservas.png',
-      alt: 'Avistamiento de Ballenas - Reserva tu Aventura'
-    },
+   
+    
     {
       id: 'galeria',
       image: '/images/miles_viajeros.png',
